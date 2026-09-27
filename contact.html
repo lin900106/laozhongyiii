@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>联系我们 · 免费肌肤咨询 · 老中医化妆品</title>
+  <meta name="description" content="联系老中医化妆品：免费肌肤诊断与本草护肤咨询，针对痘痘、斑点、敏感、皱纹为你辨证搭配。电话、邮箱、微信与门店信息。">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+</head>
+<body>
+
+  <!-- 顶部导航 -->
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">医</span>
+        <span>
+          <span class="logo-name">老中医化妆品</span>
+          <span class="logo-sub">中草药 · 护肤</span>
+        </span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">首页</a>
+        <a href="products.html">产品中心</a>
+        <a href="skin-concerns.html">问题肌肤</a>
+        <a href="about.html">品牌故事</a>
+        <a href="contact.html" class="active">联系我们</a>
+      </nav>
+      <a href="#advice-form" class="btn btn--primary nav-cta">肌肤咨询</a>
+      <button class="nav-toggle" id="navToggle" aria-label="菜单">☰</button>
+    </div>
+  </header>
+
+  <!-- 子页头 -->
+  <section class="page-hero">
+    <div class="container">
+      <p class="kicker" style="color:var(--gold);letter-spacing:.4em;font-size:13px;margin-bottom:16px;">Contact Us</p>
+      <h1>联系我们</h1>
+      <p class="lead">告诉我们你的肌肤困扰，顾问按君臣佐使之道，为你辨证一套本草方案。</p>
+    </div>
+  </section>
+
+  <!-- 联系信息 + 表单 -->
+  <section class="section" id="advice-form">
+    <div class="container contact-grid">
+
+      <!-- 左：联系信息 -->
+      <div class="contact-info">
+        <div class="section-head" style="text-align:left;margin-bottom:32px;">
+          <span class="kicker">Get in Touch</span>
+          <h2 style="font-size:30px;">多种方式，随时找我们</h2>
+        </div>
+
+        <ul class="info-list">
+          <li>
+            <span class="info-ic">话</span>
+            <div>
+              <h4>咨询热线</h4>
+              <p><a href="tel:400-000-0000">400-000-0000</a></p>
+              <small>周一至周日 9:00 – 21:00</small>
+            </div>
+          </li>
+          <li>
+            <span class="info-ic">信</span>
+            <div>
+              <h4>官方邮箱</h4>
+              <p><a href="mailto:hello@laozhongyi.com">hello@laozhongyi.com</a></p>
+              <small>合作与建议，欢迎来信</small>
+            </div>
+          </li>
+          <li>
+            <span class="info-ic">微</span>
+            <div>
+              <h4>官方微信</h4>
+              <p>laozhongyi-skincare</p>
+              <small>添加顾问微信，一对一肌肤诊断</small>
+            </div>
+          </li>
+          <li>
+            <span class="info-ic">址</span>
+            <div>
+              <h4>品牌地址</h4>
+              <p>上海市 · （详细地址待补充）</p>
+              <small>欢迎到店体验肌肤检测</small>
+            </div>
+          </li>
+        </ul>
+
+        <div class="info-tip">
+          <span class="tip-seal">诊</span>
+          <p>留下表单信息，顾问将在 <b>1 个工作日内</b> 与你联系，免费提供辨证护肤建议，不收取任何费用。</p>
+        </div>
+      </div>
+
+      <!-- 右：咨询表单（花窗面板） -->
+      <form class="contact-form" id="skinForm" novalidate>
+        <h3>免费肌肤诊断</h3>
+        <p class="form-sub">填写以下信息，帮我们更懂你的肌肤</p>
+
+        <div class="field">
+          <label for="f-name">您的称呼 <em>*</em></label>
+          <input id="f-name" name="name" type="text" placeholder="如：林女士" required>
+          <p class="field-error"></p>
+        </div>
+
+        <div class="field">
+          <label for="f-phone">联系手机 <em>*</em></label>
+          <input id="f-phone" name="phone" type="tel" placeholder="便于顾问与您联系" required>
+          <p class="field-error"></p>
+        </div>
+
+        <div class="field">
+          <label for="f-concern">主要肌肤困扰 <em>*</em></label>
+          <select id="f-concern" name="concern" required>
+            <option value="">请选择最困扰您的问题</option>
+            <option>痘痘 · 出油粉刺</option>
+            <option>斑点 · 暗沉色沉</option>
+            <option>敏感 · 泛红刺痛</option>
+            <option>皱纹 · 松弛初老</option>
+            <option>多种问题交织</option>
+          </select>
+          <p class="field-error"></p>
+        </div>
+
+        <div class="field">
+          <label for="f-msg">想对顾问说的话</label>
+          <textarea id="f-msg" name="message" rows="4" placeholder="简单描述您的肤质、困扰时长、正在使用的产品等（选填）"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn--gold btn--block">提交，获取本草护肤建议</button>
+        <p class="form-note">提交即表示同意我们通过电话/微信与您联系，信息仅用于护肤咨询，严格保密。</p>
+        <p class="form-success" id="formSuccess" hidden>✓ 提交成功！顾问将在 1 个工作日内联系您，请保持手机畅通。</p>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="logo" style="color:#fff">
+            <span class="logo-mark">医</span>
+            <span>
+              <span class="logo-name">老中医化妆品</span>
+              <span class="logo-sub">中草药 · 护肤</span>
+            </span>
+          </a>
+          <p class="brand-tag">以中草药为本，专注解决痘、斑、敏、皱四大问题肌肤，传承东方养肤智慧。</p>
+        </div>
+        <div>
+          <h4>快速导航</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="products.html">产品中心</a></li>
+            <li><a href="skin-concerns.html">问题肌肤</a></li>
+            <li><a href="about.html">品牌故事</a></li>
+            <li><a href="contact.html">联系我们</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>产品系列</h4>
+          <ul class="footer-links">
+            <li><a href="products.html#acne">清痘系列</a></li>
+            <li><a href="products.html#spots">新七白淡斑系列</a></li>
+            <li><a href="products.html#sensitive">石斛舒缓系列</a></li>
+            <li><a href="products.html#aging">抗皱紧致系列</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>联系方式</h4>
+          <ul class="footer-links">
+            <li><a href="tel:400-000-0000">400-000-0000</a></li>
+            <li><a href="mailto:hello@laozhongyi.com">hello@laozhongyi.com</a></li>
+            <li><a href="contact.html">微信 / 门店</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 老中医化妆品 · 保留所有权利</span>
+        <span>沪ICP备XXXXXXXX号</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
